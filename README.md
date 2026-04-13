@@ -2,8 +2,6 @@
 
 适用于 my-neuro 系 Live2D 桌宠项目的 **Windows 本地应用启动** 插件：让助手根据名称启动本机程序，或打开 `http(s)`、`steam://` 等链接。
 
-
-
 ## 功能概览
 
 - 首次加载时扫描**当前用户桌面**与**公共桌面**上的 `.exe`、`.lnk`、`.url`，合并写入插件目录下的 `apps.json`。
@@ -14,7 +12,7 @@
 
 1. 将本仓库整个文件夹放到 my-neuro 主程序中，例如：`live-2d/plugins/built-in/windows-app-launcher`。
 2. 保持与内置插件相同的目录层级，以便 `index.js` 中能正确加载主程序的 `plugin-base`（相对路径 `../../../js/core/plugin-base.js`）。
-3. 在插件目录执行：`npm install`。
+3. 本仓库已附带 **`node_modules`** 与 **`package-lock.json`**，通常无需再执行 `npm install`。若你本地删除了 `node_modules`、同步不完整或需升级依赖，可在插件目录重新运行 `npm install`。
 4. 在 my-neuro 的插件管理中启用 **Windows 应用启动器**。
 
 ## 关于 apps.json（重要）
@@ -32,7 +30,7 @@
 ## 依赖
 
 - Node.js（与 my-neuro 主程序一致）
-- npm 包：`iconv-lite`
+- npm 包：`iconv-lite`（已通过 `node_modules` 随仓库分发；自行升级依赖时请修改 `package.json` 后执行 `npm install`，并视情况提交变更）
 
 ## 想邀请你，做这只小牛的“云饲养员”
 
