@@ -1,6 +1,4 @@
-node_modules/
 apps.json
-package-lock.json
 .env
 .env.*
 *.local
