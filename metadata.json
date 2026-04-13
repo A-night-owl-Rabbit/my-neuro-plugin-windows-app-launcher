@@ -1,0 +1,10 @@
+{
+  "name": "windows-app-launcher",
+  "displayName": "Windows 应用启动器",
+  "version": "1.0.0",
+  "author": "official",
+  "description": "根据名称启动本机应用：扫描桌面 .exe/.lnk/.url，维护 apps.json，支持 http(s) 与 steam:// 链接。",
+  "framework_version": ">=1.0.0",
+  "main": "index.js",
+  "lang": "js"
+}
